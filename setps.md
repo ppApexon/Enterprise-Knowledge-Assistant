@@ -89,7 +89,7 @@ Step 5 — GitHub: connect EC2 as a self-hosted runner (the "auth" step)
 mkdir actions-runner && cd actions-runner
 curl -o actions-runner-linux-x64-X.Y.Z.tar.gz -L https://github.com/actions/runner/releases/download/...
 tar xzf ./actions-runner-linux-x64-*.tar.gz
-./config.sh --url https://github.com/AI-Engineer-Course/Enterprise_Knowledg_Assistant --token <TOKEN>
+./config.sh --url --token <TOKEN>
    Press Enter to accept the defaults for the questions.
 3. Install it as a service so it keeps running after you log out or reboot:
 sudo ./svc.sh install
